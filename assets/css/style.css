@@ -1,0 +1,555 @@
+*{
+    font-family: "Yekan Bakh Fat", serif;
+    direction: rtl!important;
+    margin: 0;
+    list-style: none;
+    height: content-box;
+}
+h4{
+    color: #010101;
+    text-align: center;
+    padding: 10%;
+
+}
+@font-face {
+    font-family: "Yekan Bakh";
+    src: url("../font/Yekan Bakh EN 01 Hairline.eot") format("eot"),url("../font/Yekan Bakh EN 01 Hairline.ttf") format("ttf") ,url("../font/Yekan Bakh EN 01 Hairline.woff") format("woff"),url("../font/Yekan Bakh EN 02 Thin.eot") format("eot"),url("../font/Yekan Bakh EN 02 Thin.ttf") format("ttf"),url("../font/Yekan Bakh EN 02 Thin.woff") format("woff"),url("../font/Yekan Bakh EN 03 Light.eot") format("eot"),url("../font/Yekan Bakh EN 03 Light.ttf") format("ttf"),url("../font/Yekan Bakh EN 03 Light.woff") format("woff"),url("../font/Yekan Bakh EN 04 Regular.eot") format("eot"),url("../font/Yekan Bakh EN 04 Regular.ttf") format("ttf"),url("../font/Yekan Bakh EN 04 Regular.woff") format("woff"),url("../font/Yekan Bakh EN 05 Medium.eot") format("eot"),url("../font/Yekan Bakh EN 05 Medium.ttf") format("ttf"),url("../font/Yekan Bakh EN 05 Medium.woff") format("woff"),url("../font/Yekan Bakh EN 06 Bold.eot") format("eot"),url("../font/Yekan Bakh EN 06 Bold.ttf") format("ttf"),url("../font/Yekan Bakh EN 06 Bold.woff") format("woff"),url("../font/Yekan Bakh EN 07 Heavy.eot") format("eot"),url("../font/Yekan Bakh EN 07 Heavy.ttf") format("ttf"),url("../font/Yekan Bakh EN 07 Heavy.woff") format("woff"),url("../font/Yekan Bakh EN 08 Fat.eot") format("eot"),url("../font/Yekan Bakh EN 08 Fat.ttf") format("ttf"),url("../font/Yekan Bakh EN 08 Fat.woff") format("woff");
+}
+
+@keyframes menuIcon {
+    0%{
+        transform: rotate(0deg);
+    }
+    70%{
+        transform: rotate(110deg);
+    }
+    100%{
+        transform: rotate(90deg);
+    }
+
+}
+@keyframes webDesign {
+    0%{
+        width:0%;
+    }
+    100%{
+        width: 71%;
+    }
+
+}
+@keyframes webDevelopment {
+    0%{
+        width:0%;
+    }
+    100%{
+        width: 89%;
+    }
+
+}
+@keyframes printDesign {
+    0%{
+        width:0%;
+    }
+    100%{
+        width: 88%;
+    }
+
+}
+@keyframes graphic {
+    0%{
+        width:0%;
+    }
+    100%{
+        width: 62%;
+    }
+
+}
+
+
+.navbar{
+
+    position: fixed!important;
+    width: 100%;
+    padding: 20px;
+    background-color: #ffffff;
+    z-index: 2;
+}
+.navbar h2{
+    font-size: xx-large;
+    display: inline;
+}
+.dropDown{
+
+    display: inline-block;
+    position: absolute;
+    right: 80%;
+}
+.dropDownBtn{
+    background-color: #ffffff;
+    border: none;
+    min-width: 50px;
+    max-width: 50px;
+    min-height: 50px;
+    max-height: 50px;
+    display: inline;
+    cursor:pointer ;
+}
+.dropDownBtn:hover {
+    -webkit-animation-name: menuIcon;
+    -webkit-animation-duration:1s ;
+    -webkit-animation-play-state: running;
+    -webkit-animation-fill-mode: forwards;
+
+
+}
+.menuIcon{
+    border-style: solid hidden hidden hidden;
+    border-width: thick;
+    padding-bottom: 8px;
+    border-color: #010101 ;
+
+}
+.dropDownContent{
+    position: absolute;
+    right: 10%;
+    min-width: 160px;
+    display: none;
+    border: #010101 solid 1px;
+    background-color: #ffffff;
+}
+@keyframes shad {
+    0%{
+        box-shadow: #010101 0px 0px 0px 0px;
+
+    }
+    100%{
+        box-shadow: #010101 10px 10px 0px 0px;
+
+    }
+}
+.dropDownContent a:hover {
+    transform: scale(1.1,1.1);
+    transition-duration: 0.5s;
+    background-color: #EBC464;
+    border: #010101 thin solid;
+    -webkit-animation-name: shad;
+    -webkit-animation-duration: 0.5s;
+
+    z-index: 2;
+}
+
+.dropDownContent a{
+    display: block;
+    text-align: left;
+    padding: 15px 20px;
+    text-decoration: none;
+    color: #010101;
+    background-color: #ffffff;
+    box-shadow: #010101 10px 10px 0px 0px;
+    transition-duration: 0.5s;
+    z-index: 1;
+
+}
+
+.dropDown:hover .dropDownContent{
+    background: #ffffff;
+    display: block;
+
+}
+.mainTitle{
+    padding-top: 50px;
+    height: 700px;
+    background: url("../img/header-bg.jpg") no-repeat;
+
+}
+.welcome{
+    text-align: center;
+    position: relative;
+    top: 15%;
+    color: #EBC464;
+    font-size: xxx-large;
+}
+.mainTitle .mainTitleHr{
+    position: relative;
+    top: 20%;
+    border: #EBC464 solid;
+    width: 15%;
+    margin: auto;
+}
+.mainTitleHr{
+    position: relative;
+    top: 1%;
+    border: #EBC464 solid;
+    width: 15%;
+    margin: auto;
+}
+.goalText{
+    text-align: center;
+    position: relative;
+    top: 25%;
+    color: #efefef;
+}
+p.goalText{
+    font-family: "Yekan Bakh", serif;
+}
+.buttons{
+    min-width: 250px;
+    position: relative;
+    top: 30%;
+    width:20%;
+    margin: auto;
+}
+
+.button1{
+    float: left;
+    width: 45%;
+    font-size: large;
+    background: none;
+    border: #efefef solid thin;
+    border-radius: 50px;
+    color: #efefef;
+    padding: 5% 0;
+    cursor: pointer;
+    transition-duration: 0.5s;
+    min-width: 100px;
+    margin-top: 5px;
+}
+.button1:hover{
+    transform: scale(1.3,1.3);
+    transition-duration: 0.5s;
+}
+.button2:hover{
+    transform: scale(1.3,1.3);
+    transition-duration: 0.5s;
+}
+.button2{
+    margin-top: 5px;
+    min-width: 100px;
+    transition-duration: 0.5s;
+    cursor: pointer;
+    float: right;
+    width: 45%;
+    font-size: large;
+    border: #EBC464 solid thin;
+    border-radius: 50px;
+    background-color: #EBC464;
+    color: #efefef;
+    padding: 5% 0;
+
+}
+.secondTitle{
+    background-color: #efefef;
+    padding: 10%;
+}
+.secondTitle h2{
+    color: #010101;
+    text-align: center;
+    margin-bottom: 2%;
+    font-size: xx-large;
+}
+.secondTitle p{
+    color: #010101;
+    text-align: center;
+    font-family: "Yekan Bakh Thin", serif;
+    font-size: x-large;
+    padding-top: 2%;
+}
+.leftSide{
+    margin: 2%;
+    text-align: center;
+    background: #ffffff ;
+    border-left: #EBC464 solid 5px;
+    height: 5%;
+    max-height: fit-content;
+    padding-bottom: 2%;
+}
+.thirdTitle{
+    background-color: #ccc;
+    height: content-box;
+    padding-bottom: 75px;
+
+
+}
+.titleHeader{
+    color: #010101;
+    text-align: center;
+    padding: 1%;
+    font-size: x-large;
+}
+.titleP{
+    color: #010101;
+    text-align: center;
+    font-family: "Yekan Bakh Thin", serif;
+    font-size: x-large;
+    padding-top: 2%;
+
+}
+.skillsFrame{
+    width: 100%;
+}
+.skillsFrame div p {
+    display: inline;
+    text-align: right;
+    width: 20%;
+}
+.skillsFrame div .container{
+    width: 100%;
+    height: 25px;
+    background-color: #ffffff;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+}
+.percentage{
+    text-align: left;
+    padding-top: 2px;
+    padding-left: 5px;
+    padding-bottom: 1px;
+}
+.webDesign{
+    -webkit-animation-name: webDesign;
+    -webkit-animation-duration:2s ;
+    -webkit-animation-timing-function: ease-in-out;
+    -webkit-animation-play-state: running;
+    -webkit-animation-fill-mode: forwards;
+    height:22px;
+    background-color: #EBC464;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+}
+.webDevelopment{
+    -webkit-animation-name: webDevelopment;
+    -webkit-animation-duration:3s ;
+    -webkit-animation-timing-function: ease-in-out;
+    -webkit-animation-play-state: running;
+    -webkit-animation-fill-mode: forwards;
+    height: 22px;
+    background-color: #EBC464;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+
+}
+.printDesign{
+    -webkit-animation-name: printDesign;
+    -webkit-animation-duration:4s ;
+    -webkit-animation-timing-function: ease-in-out;
+    -webkit-animation-play-state: running;
+    -webkit-animation-fill-mode: forwards;
+    width: 88%;
+    height: 22px;
+    background-color: #EBC464;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+
+}
+.graphic{
+    -webkit-animation-name: graphic;
+    -webkit-animation-duration:3s ;
+    -webkit-animation-timing-function: ease-in-out;
+    -webkit-animation-play-state: running;
+    -webkit-animation-fill-mode: forwards;
+    width: 62%;
+    height: 22px;
+    background-color: #EBC464;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+}
+.gallery{
+    padding-top:20px;
+    transition-duration: 0.5s;
+}
+.gallery:hover{
+    z-index: 1;
+    transform: scale(1.3,1.3);
+    transition-duration: 0.5s;
+}
+.fourthTitle{
+    width: 100%;
+    background-color: #efefef;
+}
+.blogContainer{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+}
+.blogC{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}
+.time{
+    text-align: center;
+    color: #EBC464;
+
+}
+.blogContainer .blogC img{
+    padding: 0 15px;
+    margin: 25px 0;
+    transition-duration: 0.5s;
+
+}
+.blogContainer .blogC img:hover{
+    opacity: 0.8;
+    transform: scale(1.1,1.1);
+    transition-duration: 0.5s;
+}
+
+.flexContainer{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+
+}
+.flexContainerInside{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px 75px;
+}
+.flexContainerInside img{
+    transition-duration:0.5s ;
+
+}
+.flexContainerInside img:hover{
+    transform: scale(1.1,1.1);
+    transition-duration:0.5s ;
+}
+.fifthTitle{
+    background-color: #cccccc;
+
+}
+.fifthTitle p{
+    text-align: center;
+    padding: 20px ;
+    font-size: medium;
+    font-family: "Yekan Bakh";
+}
+.formSectionContainer{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-content:flex-end;
+}
+.formContainer{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px ;
+}
+.info{
+    padding-top: 30px;
+}
+.info h4{
+    text-align: right;
+}
+
+label{
+    margin-right: 10px;
+    width: 60%;
+    display: block;
+}
+textarea{
+    display: block;
+    width: 60%;
+    height: 100px;
+    margin: 10px;
+    padding: 5px;
+}
+footer{
+    background-color: #112211;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+.socialNetworks{
+    display: flex;
+    flex-direction:row ;
+    justify-content: center;
+    align-content: center;
+}
+
+.footContainer{
+    display: flex;
+    padding: 10px 10%;
+    flex-direction: row ;
+    align-content: center;
+    justify-content: center;
+}
+.footContainer p{
+    font-family: "Yekan Bakh Thin";
+    color: #efefef;
+    padding: 10px 2px;
+    flex-direction: row ;
+}
+input[type=email]{
+    margin: 10px;
+    padding: 5px ;
+    width: 60%;
+}
+input[type=text]{
+    margin: 10px;
+    padding: 5px ;
+    width: 60%;
+}
+input[type=submit]{
+    background-color: #EBC464;
+    margin: 10px;
+    padding: 10px 30px;
+    border: #EBC464 solid 0px;
+
+}
+input[type=submit]:hover{
+    cursor: pointer;
+    transform: scale(1.1,1.1);
+    transition-duration: 0.2s;
+}
+.fa {
+    padding: 10px;
+    font-size: 10px;
+    width: 10px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 5px;
+    color: #efefef;
+    background-color: #334756;
+}
+
+
+.fa:hover {
+    opacity: 0.7;
+}
+.copyright{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    color: #efefef;
+    padding: 20px;
+    background-color: #010101;
+}
+.copyright p{
+    font-family: "Yekan Bakh Thin";
+}
+@media (max-width: 992px){
+    .formSectionContainer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .info{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+    }
+    .footContainer{
+        flex-direction: column;
+    }
+
+}
